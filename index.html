@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            display: flex;
+            justify-content: center;
+        }
+        .viewer {
+            position: relative; 
+            display: inline-block; 
+        }
+
+        .viewer > div {
+            position: absolute; 
+            top: 50%; 
+            transform: translateY(-50%); 
+            width: 75px;
+            height: 100%; 
+            background-color: rgba(44, 44, 44, 0.5); 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+            color: #0d4fb1;
+        }
+
+        .viewer > div:first-child {
+            left: 0; 
+        }
+
+        .viewer > div:last-child {
+            right: 0; 
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="viewer"></div>
+    </div>
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/9ee00e58d9.js" crossorigin="anonymous"></script>
+</body>
+</html>
